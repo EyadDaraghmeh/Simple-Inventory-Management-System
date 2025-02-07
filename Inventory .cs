@@ -18,11 +18,19 @@ namespace Simple_Inventory_Management_System
         }
 
 
-        public void Show()
+        public void ViewAllProducts()
         {
-            foreach (Product product in _products)
+            if (_products.Count == 0)
             {
-                Console.WriteLine(product.Name);
+                Console.WriteLine("There's no product");
+            }
+            else
+            {
+                Console.WriteLine("Name | Quantity | Price");
+                foreach (var product in _products)
+                {
+                    Console.WriteLine($"{product.Name} | {product.Quantity} | {product.Price}");
+                }
             }
         }
     }

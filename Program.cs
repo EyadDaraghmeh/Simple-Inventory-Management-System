@@ -13,21 +13,32 @@ namespace Simple_Inventory_Management_System
             Console.WriteLine("6.Exit");
 
             int ch = 0;
-            Product product = new Product();
+            Inventory inventory = new Inventory();
 
-            while (ch!=6)
+            while (true)
             {
                 ch=int.Parse(Console.ReadLine());
                 
                 if (ch==1)
                 {
+                    Product product = new Product();
+
                     Console.WriteLine("Enter the name of product: ");
                     product.Name = Console.ReadLine();
                     Console.WriteLine("Enter the price of product: ");
                     product.Price =int.Parse( Console.ReadLine());
                     Console.WriteLine("Enter the quntity of product: ");
                     product.Quantity = int.Parse(Console.ReadLine());
+                    inventory.AddProduct(product);
 
+                }
+                else if(ch==2)
+                {
+                    inventory.ViewAllProducts();
+                }
+                else if (ch==6)
+                {
+                    break;
                 }
 
             
