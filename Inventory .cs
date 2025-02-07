@@ -22,7 +22,7 @@ namespace Simple_Inventory_Management_System
         {
             if (_products.Count == 0)
             {
-                Console.WriteLine("There's no product");
+                Console.WriteLine("There's no products");
             }
             else
             {
@@ -31,6 +31,41 @@ namespace Simple_Inventory_Management_System
                 {
                     Console.WriteLine($"{product.Name} | {product.Quantity} | {product.Price}");
                 }
+            }
+        }
+
+        public void EditAProduct(string name)
+        {
+            if ( _products.Count == 0)
+            {
+                Console.WriteLine("There's no products");
+            }
+            else
+            {
+                Product product = new Product();
+
+                foreach (var pro in _products)
+                {
+                    if(pro.Name == name)
+                    {
+                        product= pro;
+                    }
+                }
+
+                if (product.Name == null)
+                {
+                    Console.WriteLine("There's no product with this name");
+                }
+                else
+                {
+                    Console.WriteLine("Enter Name :");
+                    product.Name = Console.ReadLine();
+                    Console.WriteLine("Enter price");
+                    product.Price = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter quntity");
+                    product.Quantity = int.Parse(Console.ReadLine());
+                }
+                
             }
         }
     }

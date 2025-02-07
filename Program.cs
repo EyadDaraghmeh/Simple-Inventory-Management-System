@@ -36,6 +36,11 @@ namespace Simple_Inventory_Management_System
                 {
                     inventory.ViewAllProducts();
                 }
+                else if(ch==3)
+                {
+                    Console.WriteLine("Enter the Name of the product");
+                    inventory.EditAProduct(Console.ReadLine());
+                }
                 else if (ch==6)
                 {
                     break;
