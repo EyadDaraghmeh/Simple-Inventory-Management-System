@@ -1,0 +1,15 @@
+D:\C#\Simple Inventory Management System\bin\Debug\net7.0\Simple Inventory Management System.exe
+D:\C#\Simple Inventory Management System\bin\Debug\net7.0\Simple Inventory Management System.deps.json
+D:\C#\Simple Inventory Management System\bin\Debug\net7.0\Simple Inventory Management System.runtimeconfig.json
+D:\C#\Simple Inventory Management System\bin\Debug\net7.0\Simple Inventory Management System.dll
+D:\C#\Simple Inventory Management System\bin\Debug\net7.0\Simple Inventory Management System.pdb
+D:\C#\Simple Inventory Management System\obj\Debug\net7.0\Simple Inventory Management System.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Simple Inventory Management System\obj\Debug\net7.0\Simple Inventory Management System.AssemblyInfoInputs.cache
+D:\C#\Simple Inventory Management System\obj\Debug\net7.0\Simple Inventory Management System.AssemblyInfo.cs
+D:\C#\Simple Inventory Management System\obj\Debug\net7.0\Simple Inventory Management System.csproj.CoreCompileInputs.cache
+D:\C#\Simple Inventory Management System\obj\Debug\net7.0\Simple Inventory Management System.sourcelink.json
+D:\C#\Simple Inventory Management System\obj\Debug\net7.0\Simple Inventory Management System.dll
+D:\C#\Simple Inventory Management System\obj\Debug\net7.0\refint\Simple Inventory Management System.dll
+D:\C#\Simple Inventory Management System\obj\Debug\net7.0\Simple Inventory Management System.pdb
+D:\C#\Simple Inventory Management System\obj\Debug\net7.0\Simple Inventory Management System.genruntimeconfig.cache
+D:\C#\Simple Inventory Management System\obj\Debug\net7.0\ref\Simple Inventory Management System.dll
