@@ -38,17 +38,24 @@ namespace Simple_Inventory_Management_System
                 }
                 else if(ch==3)
                 {
-                    Console.WriteLine("Enter the Name of the product");
-                    inventory.EditAProduct(Console.ReadLine());
+                    inventory.EditAProduct();
                 }
                 else if(ch==4)
                 {
-                    Console.WriteLine("Enter the Name of the product");
-                    inventory.DeleteAProduct(Console.ReadLine());
+                    inventory.DeleteAProduct();
+                }
+                else if(ch==5)
+                {
+                    inventory.SearchAProduct();
                 }
                 else if (ch==6)
                 {
+                    Console.WriteLine("Exist.................");
                     break;
+                }
+
+                else {
+                    Console.WriteLine("Valid Option!!!");
                 }
 
             

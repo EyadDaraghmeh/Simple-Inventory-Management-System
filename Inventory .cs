@@ -34,7 +34,7 @@ namespace Simple_Inventory_Management_System
             }
         }
 
-        public void EditAProduct(string name)
+        public void EditAProduct()
         {
             if ( _products.Count == 0)
             {
@@ -42,15 +42,12 @@ namespace Simple_Inventory_Management_System
             }
             else
             {
+                Console.WriteLine("Enter the Name of the product");
+                string name = Console.ReadLine();
                 Product product = new Product();
 
-                foreach (var pro in _products)
-                {
-                    if(pro.Name == name)
-                    {
-                        product= pro;
-                    }
-                }
+                product = Search(name);
+
 
                 if (product.Name == null)
                 {
@@ -69,7 +66,7 @@ namespace Simple_Inventory_Management_System
             }
         }
 
-        public void DeleteAProduct(string name)
+        public void DeleteAProduct()
         {
             if(_products.Count == 0)
             {
@@ -77,15 +74,12 @@ namespace Simple_Inventory_Management_System
             }
             else
             {
+                Console.WriteLine("Enter the Name of the product");
+                string name = Console.ReadLine();
                 Product product= new Product();
-                foreach (var pro in _products)
-                {
-                    if (pro.Name == name)
-                    {
-                        product=pro;
-                    }
-                }
-                if(product.Name == null)
+                product = Search(name);
+
+                if (product.Name == null)
                 {
                     Console.WriteLine("There's no product with this name");
 
@@ -95,6 +89,45 @@ namespace Simple_Inventory_Management_System
                     _products.Remove(product);
                 }
             }
+        }
+
+        public void SearchAProduct()
+        {
+            if (_products.Count == 0)
+            {
+                Console.WriteLine("There's no products");
+            }
+            else
+            {
+                Console.WriteLine("Enter the Name of the product");
+                string name = Console.ReadLine();
+                Product product = new Product();
+                product=Search(name);
+              
+                if (product.Name == null)
+                {
+                    Console.WriteLine("There's no product with this name");
+
+                }
+                else
+                {
+                    Console.WriteLine($"{product.Name} | {product.Quantity} | {product.Price}");
+
+                }
+            }
+        }
+
+        public Product Search(string name)
+        {
+            Product product = new Product();
+            foreach (var pro in _products)
+            {
+                if (pro.Name == name)
+                {
+                    product = pro;
+                }
+            }
+            return product;
         }
     }
 }
