@@ -68,5 +68,33 @@ namespace Simple_Inventory_Management_System
                 
             }
         }
+
+        public void DeleteAProduct(string name)
+        {
+            if(_products.Count == 0)
+            {
+                Console.WriteLine("There's no products");
+            }
+            else
+            {
+                Product product= new Product();
+                foreach (var pro in _products)
+                {
+                    if (pro.Name == name)
+                    {
+                        product=pro;
+                    }
+                }
+                if(product.Name == null)
+                {
+                    Console.WriteLine("There's no product with this name");
+
+                }
+                else
+                {
+                    _products.Remove(product);
+                }
+            }
+        }
     }
 }

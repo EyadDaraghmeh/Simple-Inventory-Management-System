@@ -41,6 +41,11 @@ namespace Simple_Inventory_Management_System
                     Console.WriteLine("Enter the Name of the product");
                     inventory.EditAProduct(Console.ReadLine());
                 }
+                else if(ch==4)
+                {
+                    Console.WriteLine("Enter the Name of the product");
+                    inventory.DeleteAProduct(Console.ReadLine());
+                }
                 else if (ch==6)
                 {
                     break;
